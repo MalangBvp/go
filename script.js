@@ -1,5 +1,5 @@
 // Set your prefix here (must start and end with a slash)
-const PREFIX = '/-/';
+const PREFIX = '/go/';
 
 fetch('redirects.json')
     .then(response => response.json())
