@@ -32,12 +32,12 @@
   </style>
 </head>
 <body>
-    <img src="malang.webp" alt="Malang" style=" height: 80px;"">
+    <img src="utils/malang.webp" alt="Malang" style=" height: 80px;"">
   <h2>Malang Redirects</h2>
   <div id="table-container">Loading...</div>
 
   <script>
-    fetch('redirects.json')
+    fetch('utils/redirects.json')
       .then(res => res.json())
       .then(data => {
         const container = document.getElementById('table-container');

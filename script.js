@@ -1,7 +1,7 @@
 // Set your prefix here (must start and end with a slash)
-const PREFIX = '/malang/';
+const PREFIX = '/go/';
 
-fetch('redirects.json')
+fetch('utils/redirects.json')
     .then(response => response.json())
     .then(redirects => {
         const pathname = window.location.pathname;
