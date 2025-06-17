@@ -1,3 +1,3 @@
 # The Malang Redirector
 
-[Redirection Tool](https://multiverseweb.github.io/malang/help)
+[Redirection Tool](https://malang-bvp.github.io/go/help)
