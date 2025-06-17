@@ -1,6 +1,6 @@
 # The Malang Redirector
 
-Malang's [Redirection Tool](https://malang-bvp.github.io/go/help)
+Malang's [Redirection Tool](https://malangbvp.github.io/go/help)
 
 ### Admin Operations
 
