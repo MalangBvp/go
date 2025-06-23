@@ -10,15 +10,15 @@ if (pathname.startsWith(PREFIX)) {
         const slug = pathname.slice(PREFIX.length).replace(/\/+$/, ''); // remove trailing slashes  
         const targetUrl = redirects[slug];  
 
-    if (targetUrl) {  
+    if (targetUrl) {
+    window.location.replace(targetUrl);
             document.body.innerHTML = `  
             <div class="container">  
     <img src="malang.png" alt="Malang">  
     <h1>Redirecting...</h1>  
     <p>If you are not redirected automatically, <a id="manualLink" href="${targetUrl}">click here</a>.</p>  
     </div>  
-    `;  
-    window.location.replace(targetUrl);  
+    `;    
         } else {  
             document.body.innerHTML = `  
             <div class="container">  
