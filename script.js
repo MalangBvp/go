@@ -10,16 +10,22 @@ if (pathname.startsWith(PREFIX)) {
         const slug = pathname.slice(PREFIX.length).replace(/\/+$/, ''); // remove trailing slashes  
         const targetUrl = redirects[slug];  
 
-        if (targetUrl) {  
-            document.body.innerHTML = `  
-            <div class="container">  
-    <img src="malang.png" alt="Malang">  
-    <h1>Redirecting...</h1>  
-    <p>If you are not redirected automatically, <a id="manualLink" href="${targetUrl}">click here</a>.</p>  
-    </div>  
-    `;  
-    window.location.replace(targetUrl);  
-        } else {  
+        if (targetUrl) {
+    document.body.innerHTML = `
+        <div class="container">
+            <img src="malang.png" alt="Malang">
+            <h1 style="display: none;">Redirecting...</h1>
+            <p style="display: none;">If you are not redirected automatically, <a id="manualLink" href="${targetUrl}">click here</a>.</p>
+        </div>
+    `;
+
+        document.querySelector('h1').style.display = 'block';
+        document.querySelector('p').style.display = 'block';
+    }, 2000);
+
+    // Redirect immediately
+    window.location.replace(targetUrl);
+} else {  
             document.body.innerHTML = `  
             <div class="container">  
     <img src="malang.png" alt="Malang">  
