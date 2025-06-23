@@ -19,6 +19,7 @@ if (pathname.startsWith(PREFIX)) {
                 console.error('Redirect failed:', error);
                 showMessage('Something went wrong.', '');
             });
+    }
 } else {
     showMessage('Invalid URL.', `This redirect only works under "<code>${PREFIX}</code>".`);
 }
@@ -27,7 +28,7 @@ function redirectToSlug(slug, redirects) {
     const targetUrl = redirects[slug];
 
     if (targetUrl) {
-window.location.replace(targetUrl);
+        window.location.replace(targetUrl);
     } else {
         showMessage('404 - Page Not Found', `No redirect found for "<code>${slug}</code>".`);
     }
