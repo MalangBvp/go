@@ -10,7 +10,7 @@ fetch('redirects.json')
     document.body.innerHTML = `
       <div class="container">
         <img src="malang.png" alt="Malang" id="malangLogo">
-        <p id="manualLinkContainer" style="opacity:0;">
+        <p id="manualLinkContainer" style="opacity:0; transition-duration: 0.3s;">
           <a id="manualLink" href="#">Go</a>
         </p>
       </div>
