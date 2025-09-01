@@ -1,8 +1,9 @@
-{ "cards": "https://drive.google.com/drive/folders/1M78s-ou38nMyjQb8LBxwVShXR2QDjiCi?usp=sharing",
+{
+  "recruitments": "https://malangbvp.in/src/pages/recruitments.html",
+  "cards": "https://drive.google.com/drive/folders/1M78s-ou38nMyjQb8LBxwVShXR2QDjiCi?usp=sharing",
   "%F0%9F%9A%80": "https://tejasgupta.vercel.app",
-  "to-site": "https://malang-new.vercel.app",
+  "site": "https://malang-new.vercel.app",
   "help": "help.html",
-  "site": "https://malangbvp.godaddysites.com/",
   "instagram": "https://www.instagram.com/malangbvp",
   "linkedin": "https://www.linkedin.com/company/malangbvp/",
   "github": "https://github.com/MalangBvp",
